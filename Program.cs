@@ -201,12 +201,6 @@ class CSV<T> where T : new(){
 
 class App{
     static void Main(string[] args){
-        /*
-        string digimonlist_csv = "C:\\Users\\User1\\Documents\\uke4\\Digimon\\DigiDB_digimonlist.csv";
-        string movelist_csv = "C:\\Users\\User1\\Documents\\uke4\\Digimon\\DigiDB_movelist.csv";
-        string supportlist_csv = "C:\\Users\\User1\\Documents\\uke4\\Digimon\\DigiDB_supportlist.csv";
-        */
-
         string digimonlist_csv = ".\\Digimon\\DigiDB_digimonlist.csv";
         string movelist_csv = ".\\Digimon\\DigiDB_movelist.csv";
         string supportlist_csv = ".\\Digimon\\DigiDB_supportlist.csv";
