@@ -231,7 +231,7 @@ class App{
 
                 List<Markup> rows = new();
                 foreach(var m in moves){
-                    rows.Add(new Markup(m.move + ", " +  m.sp_cost + ", " + m.type + ", " + m.power + ", " + m.attribute + ", " + m.inheritable + ", " + m.description));
+                    rows.Add(new Markup($"{m.move}, {m.sp_cost}, {m.type}, {m.power}, {m.attribute}, {m.inheritable}, {m.description}"));
                 }
                 AnsiConsole.Clear();
                 AnsiConsole.WriteLine(format_move);
