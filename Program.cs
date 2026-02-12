@@ -200,7 +200,7 @@ class CSV<T> where T : new(){
 }
 
 class App{
-    static void Main(string[] args){
+    static void start(){
         string digimonlist_csv = ".\\Digimon\\DigiDB_digimonlist.csv";
         string movelist_csv = ".\\Digimon\\DigiDB_movelist.csv";
         string supportlist_csv = ".\\Digimon\\DigiDB_supportlist.csv";
@@ -241,5 +241,14 @@ class App{
                 throw new Exception("multiple of the same entry");
             }
         }
+    }
+    static void Main(string[] args){
+        try{
+            start();
+        }
+        catch(Exception ex){
+            Console.WriteLine(ex.Message);
+        }
+
     }
 }
